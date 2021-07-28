@@ -1,12 +1,29 @@
 
 <mat-toolbar color ="primary" class="navbar">
-    <div class="text">Ezio Project</div>
-    <div>
-      <span> INICIO </span>
-      <span> MISIÓN </span>
-      <span> VISIÓN </span>
-      <span> CONTACTO </span>
-    </div>
+    <button mat-button  class="btnStyle2">EZIO PROJECT</button>
+    <button mat-button [matMenuTriggerFor]="aboveMenu" class="btnStyle">INICIO</button>
+    <mat-menu #aboveMenu="matMenu" yPosition="above">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+    
+    <button mat-button [matMenuTriggerFor]="belowMenu" class="btnStyle">MISIÓN</button>
+    <mat-menu #belowMenu="matMenu" yPosition="below">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+    
+    <button mat-button [matMenuTriggerFor]="beforeMenu" class="btnStyle">VISIÓN</button>
+    <mat-menu #beforeMenu="matMenu" xPosition="before">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+    
+    <button mat-button [matMenuTriggerFor]="afterMenu"class="btnStyle">CONTACTO</button>
+    <mat-menu #afterMenu="matMenu" xPosition="after">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
 </mat-toolbar>
  
 

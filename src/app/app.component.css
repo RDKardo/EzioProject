@@ -1,6 +1,7 @@
 .navbar{
-    justify-content: space-between;
-    align-content: space-around;
+    justify-content: space-around;
+    color: whitesmoke;
+    font-family: 100px;
 }
 
 span{
@@ -8,7 +9,18 @@ span{
 }
 
 .text{
-    font-size: 40px;
+    font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
-    color: darkgray;
+    color: orange;
+}
+
+.btnStyle{
+    background-color: bisque;
+    color: black;
+}
+
+.btnStyle2{
+    background-color:teal;
+    color: rgb(247, 241, 241);
+    font-size: 20px;
 }
