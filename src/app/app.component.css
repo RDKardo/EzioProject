@@ -34,3 +34,18 @@ span{
 .mat-tab-group {
     margin-bottom: 48px;
   }
+
+  .example-card {
+    height: 100%;
+    width: 100%;
+    color: teal;
+    background:radial-gradient(200px top, ellipse, white, #1162ac, rgb(99, 159, 248));
+    ;
+  }
+  
+  .image {
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+  }
+  
