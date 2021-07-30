@@ -49,8 +49,6 @@ import {OverlayModule} from '@angular/cdk/overlay';
 
 import { HomeComponent } from './home/home.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
-=======
-import{ MatIconRegistry} from '@angular/material/icon';
 
 
 
@@ -110,7 +108,6 @@ import{ MatIconRegistry} from '@angular/material/icon';
     OverlayModule,
     PortalModule,
     ScrollingModule,
-    MatIconRegistry,
     
   ],
   providers: [],

@@ -1,49 +1,21 @@
+<mat-toolbar color = "primary" class="navbar"> 
+  <img class="png-icon" src="/assets/barco-icon.png">
+  <!-- <div class="projectText"> Ezio Project </div> -->
+  <div>
+    <button mat-button color="success">
+      <mat-icon>home</mat-icon>
+      <span class="toolbarText">Home </span>
+    </button>
 
-<mat-toolbar color ="primary" class="navbar">
-    <button mat-button  class="btnStyle2">EZIO PROJECT</button>
-    <button mat-button [matMenuTriggerFor]="aboveMenu" class="btnStyle">INICIO</button>
-    <mat-menu #aboveMenu="matMenu" yPosition="above">
-      <button mat-menu-item>Item 1</button>
-      <button mat-menu-item>Item 2</button>
-    </mat-menu>
+    <button mat-button color="success">
+      <mat-icon>directions_boat</mat-icon>
+      <span class="toolbarText">About Us</span>
+    </button>
+
+    <button mat-button color="success">
+      <mat-icon>contact_phone</mat-icon>
+      <span class="toolbarText">Contact</span>
+    </button>
     
-    <button mat-button [matMenuTriggerFor]="belowMenu" class="btnStyle">MISIÓN</button>
-    <mat-menu #belowMenu="matMenu" yPosition="below">
-      <button mat-menu-item>Item 1</button>
-      <button mat-menu-item>Item 2</button>
-    </mat-menu>
-    
-    <button mat-button [matMenuTriggerFor]="beforeMenu" class="btnStyle">VISIÓN</button>
-    <mat-menu #beforeMenu="matMenu" xPosition="before">
-      <button mat-menu-item>Item 1</button>
-      <button mat-menu-item>Item 2</button>
-    </mat-menu>
-    
-    <button mat-button [matMenuTriggerFor]="afterMenu"class="btnStyle">CONTACTO</button>
-    <mat-menu #afterMenu="matMenu" xPosition="after">
-      <button mat-menu-item>Item 1</button>
-      <button mat-menu-item>Item 2</button>
-    </mat-menu>
+  </div>
 </mat-toolbar>
-
-
-
-<mat-card class="example-card">
-  <!-- <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>Ezio Services</mat-card-title>
-    <mat-card-subtitle></mat-card-subtitle>
-  </mat-card-header> -->
-  <img mat-card-image src="https://www.repsol.com/content/dam/repsol-corporate/es/sostenibilidad/ship-to-ship.jpg.transform/rp-rendition-md/image.jpg"  class="image" alt="Photo of a Shiba Inu">
-  <mat-card-content>
-    <p>
-      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-      bred for hunting.
-    </p>
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
-  </mat-card-actions>
-</mat-card>
