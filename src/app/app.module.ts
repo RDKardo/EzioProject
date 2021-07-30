@@ -46,8 +46,13 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 import {OverlayModule} from '@angular/cdk/overlay';
+
 import { HomeComponent } from './home/home.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+=======
+import{ MatIconRegistry} from '@angular/material/icon';
+
+
 
 @NgModule({
   declarations: [
@@ -105,6 +110,8 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     OverlayModule,
     PortalModule,
     ScrollingModule,
+    MatIconRegistry,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
