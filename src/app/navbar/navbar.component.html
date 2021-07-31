@@ -1,0 +1,70 @@
+<!-- NAVIGATION MENU -->
+<mat-toolbar class="nav-toolbar">
+    <!-- Logo -->
+    <a routerLink="home">
+        <img src="/assets/barco-icon.png">
+        <span class="main-title">Natural Providers</span>
+    </a>
+     
+    <span class="spacer"></span>
+
+    <!-- Menu -->
+    <div fxShow="true" fxHide.lt-md="true">
+        <a mat-button routerLink="home" color="success">
+            <span class="toolbarText">HOME</span>
+        </a>
+      
+        <button mat-button routerLink="aboutus" color="success">
+            <span class="toolbarText">ABOUT</span>
+        </button>
+    
+        <a mat-button routerLink="products" color="success">
+            <span class="toolbarText">SUPPLIES</span>
+        </a>
+    
+        <a mat-button routerLink="contact" color="success">
+            <span class="toolbarText">CONTACT</span>
+        </a>
+    </div>
+    <!-- Icono de menu -->
+    <div class="icon-menu" fxShow="true" fxHide.gt-sm="true">
+        <button mat-icon-button (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+</mat-toolbar>
+
+<main class="main">
+    <router-outlet></router-outlet>
+</main>
+
+<!-- Menu lateral -->
+<mat-sidenav-container fxFlexFill>
+    <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over" opened="false" fxHide.gt-sm="true" position="end">
+        <div fxLayout="column">
+            <a mat-button routerLink="home" color="success">
+                <span>HOME</span>
+            </a>
+          
+            <a mat-button routerLink="aboutus" color="success">
+                <span>ABOUT</span>
+            </a>
+            <a mat-button routerLink="products" color="success">
+                <span>SUPPLIES</span>
+            </a>
+        
+            <a mat-button routerLink="contact" color="success">
+                <span>CONTACT</span>
+            </a>
+        </div>
+    </mat-sidenav>
+</mat-sidenav-container>
+
+<div class="main-banner">
+    <h1 class="main-banner-title" >Philosophy</h1>
+    <p class="main-banner-content">
+        This stage includes the definition of the organizational culture, philosophy, 
+        policies, values, mission, and vision of the organization
+    </p>
+</div>
+

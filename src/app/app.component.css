@@ -1,32 +1,4 @@
-.navbar{
-    justify-content: space-between;
+/*LIMPIEZA GENERAL DE LA PAGINA*/
+*{
+    box-sizing: border-box;
 }
-
-span{
-    padding-left: 1rem;
-}
-
-.mat-button.mat-success {
-    color:#056b8a;
-  }
-
-
-  .mat-toolbar.mat-primary {
-    background:rgb(189, 186, 186);
-    color: rgb(168, 166, 166);
-    
-  }
-
-  .toolbarText{
-      font-size: 30px;
-  }
-
-  .projectText{
-      font-size: 40px;
-  }
-
-  .png-icon{
-      justify-content: left;
-      left: -120px;
-      
-  }

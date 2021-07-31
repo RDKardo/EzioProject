@@ -46,10 +46,13 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 import {OverlayModule} from '@angular/cdk/overlay';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { HomeComponent } from './home/home.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
-
+import { NavbarComponent } from './navbar/navbar.component';
+import { ProductsComponent } from './products/products.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -57,6 +60,9 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     AppComponent,
     HomeComponent,
     AboutusComponent,
+    NavbarComponent,
+    ProductsComponent,
+    ContactComponent,
     
   ],
   imports: [
@@ -108,7 +114,7 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     OverlayModule,
     PortalModule,
     ScrollingModule,
-    
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
