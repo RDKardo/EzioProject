@@ -1,0 +1,36 @@
+
+.content > mat-card {
+    width: 100%;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.mat-toolbar.mat-primary {
+    background:rgb(30, 138, 209);
+    color: rgb(5, 5, 5);
+  }
+
+
+  mat-toolbar {
+    justify-content: space-between;
+}
+
+
+.column-label {
+    margin-right: 8px;
+    font-size: 1rem;
+}
+
+agm-map {
+    height: 300px;
+}
+
+.pStyle{
+    font-size: 20px;
+    align-content: center;
+}
+
+
+.contentDiv{
+    justify-content: center;
+}

@@ -1,33 +1,54 @@
-
 <div >
-    <div>
-        <h2>
-            <strong>INTRODUCTION</strong>
-        </h2>
-        <p>
-            The company Nautical Providers, S.A. de C.V. is a company founded with the purpose of offering provisioning, supply, and crew transportation services. 
-            Mainly within the Port of Lázaro Cárdenas, in terminals and on docked ships.
-        </p>
-    </div>
-    
-    <div>
-        <h2>
-            <strong>SPECIFIC GOAL</strong>
-        </h2>
-        <p>  
-            The purpose of the Company will be:
-            1. - The purchase, sale, import, and export of fruits, vegetables, cereals, livestock, vehicles, clothing, textiles, electronics, and all kinds of products similar to the above.
-            2. - The supply and provision of services to ships.
-            3. - Collection, transportation, storage, processing, treatment of non-hazardous waste and hazardous waste; Environmental cleaning in private and government companies, federal freight transportation service in the modality of specialized cargo service of residual waste materials, waste, or others.
-        </p>
-    </div>
+    <div fxLayout="row wrap" fxLayoutGap="16px grid" class="contentDiv">
+      <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%">
+        <mat-card class="mat-elevation-z4" >
+          <mat-card-header>
+            <mat-card-title> EMAIL </mat-card-title>
+            <mat-icon aria-hidden="false" > email</mat-icon>
+          </mat-card-header>
+          <img mat-card-image src="https://i.blogs.es/dddd84/cargo00/1366_2000.jpg">
+          <mat-card-content>
+            <p class="pStyle">
+                email_test@gmail.com
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
 
-    <div>
-        <h2>
-            <strong>MISSION</strong>
-        </h2>
-        <p style="color: #35435D; font-weight: bold">
-            Provide high-quality materials and services at competitive prices, always seeking the complete satisfaction of our customers.
-        </p>
+      <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%">
+        <mat-card class="mat-elevation-z4" >
+          <mat-card-header>
+            <mat-card-title>Phone </mat-card-title>
+            <mat-icon aria-hidden="false" > phone</mat-icon>
+          </mat-card-header>
+          <img mat-card-image src="https://i.blogs.es/dddd84/cargo00/1366_2000.jpg">
+          <mat-card-content>
+            <p class="pStyle">
+                
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%">
+        <mat-card class="mat-elevation-z4" >
+          <mat-card-header>
+            <mat-card-title>Localization </mat-card-title>
+            <mat-icon aria-hidden="false" > location_on</mat-icon>
+          </mat-card-header>
+          
+          <mat-card-content>
+            <agm-map
+                [latitude]="latitude" 
+                [longitude]="longitude" [zoom]="zoom">
+                <agm-marker [latitude]="20.703826" [longitude]="-103.331875" ></agm-marker>
+            </agm-map>
+            <p>
+              The Himalayas is a mountain range in Asia.
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
     </div>
 </div>
+
