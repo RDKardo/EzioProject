@@ -103,8 +103,8 @@ button{
 }
 
 .main-banner{
-  background: url(../../assets/images/barco2.jpg);
-  min-height: 400px;
+  background: url(../../assets/images/barco4.jpg);  
+  min-height: 600px;
   position: absolute;
   top: 0;
   left: 0;
@@ -115,7 +115,7 @@ button{
 .main-banner:before{
   content: "";
   width: 100%;
-  min-height: 400px;
+  min-height: 600px;
   background: rgba(0,0,0,0.3);
   position: absolute;
   top: 0;

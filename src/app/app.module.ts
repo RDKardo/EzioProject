@@ -47,12 +47,16 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 import {OverlayModule} from '@angular/cdk/overlay';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { AgmCoreModule } from '@agm/core';
 
+
+// Components
 import { HomeComponent } from './home/home.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProductsComponent } from './products/products.component';
 import { ContactComponent } from './contact/contact.component';
+
 
 
 @NgModule({
@@ -114,8 +118,11 @@ import { ContactComponent } from './contact/contact.component';
     OverlayModule,
     PortalModule,
     ScrollingModule,
-    FlexLayoutModule
-  ],
+    FlexLayoutModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDYhSyBDAzRL3MAu2FGLuwol62AIfEYq9I'
+    })
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
