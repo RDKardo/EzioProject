@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  latitude:number = 20.703826;
+  longitude:number = -103.331875;
+  zoom: number = 15  ;
 
   constructor() { }
 
