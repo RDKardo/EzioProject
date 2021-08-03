@@ -73,7 +73,7 @@ button{
   color: #fff;
   margin-right: 0;
   margin-top: 0px;
-  margin-bottom: 3px;
+  margin-bottom: 1px;
   padding: 8px 25px;
   position: relative;
   width: 100%;
@@ -102,6 +102,11 @@ button{
   border-radius: 5px;
 }
 
+
+/* .main-banner{
+  background: url(../../assets/images/barco3.jpg);
+  min-height: 400px;
+=======
 .main-banner{
   background: url(../../assets/images/barco4.jpg);  
   min-height: 600px;
@@ -131,9 +136,4 @@ button{
   transform: translate(5%) translate(-50%);
   color: white;
   font-size: 1.3em;
-}
-
-.main{
-  margin-top: 400px;
-  padding: 15px;
-}
+} */

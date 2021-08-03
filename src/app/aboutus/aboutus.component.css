@@ -1,7 +1,82 @@
-.matcard-content{
-    font-weight: normal;
-    text-align: justify;
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 12px;
+.aboutus-banner-img{
+  background: url(../../assets/images/barco7.jpg);
+  min-height: 700px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -999;
+}
+
+.aboutus-banner-img:before {
+    content: "";
+    width: 100%;
+    min-height: 700px;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 0;
+    left: 0; 
+}
+
+.aboutus-banner-content{
+    width: 100%;
+    padding: 15px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    font-size: 1.3em;
+}
+
+/* .aboutus-banner-title, .aboutus-banner-text{
+    font-size: 1.5em;
+    padding: 10px;
+} */
+
+.main{
+    margin-top: 600px;
+    padding: 50px;
+}
+
+.spacer{
+    height: 300px;
+    width: 100%;
+    background: yellow;
+    display: block;
+}
+
+.matcard-container{
+    font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+    width: 450px;
+    height: auto;
+    margin: 100px 300px auto 20px;
+    float: left;
+    border: red 5px solid;
+}
+
+.matcard-title{
+    font-weight: bold;
+    text-align: left;
+    font-size: 2em;
+    position: relative;
     color: #35435D;
+}
+
+.matcard-title::before{
+    content: "";
+    width: 70%;
+    position: absolute;
+    top: 40px;
+    left: 0%;
+    height: 3px;
+    background: #000;
+}
+
+.matcard-content{
+    font-size: 1.5em;
+    text-align: justify;
+    color: #35435D;
+    margin-top: 20px;
+    padding: 5px;
 }
