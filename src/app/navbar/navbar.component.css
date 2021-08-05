@@ -1,74 +1,11 @@
-/* .navbar{
-    justify-content: space-between;
+#top-header{
+  background-color: #35435D;
+  width: 100%;
+  height: 50px;
+  display: block;
 }
-
-span{
-    padding-left: 1rem;
-}
-
-.mat-button.mat-success {
-    color:#056b8a;
-  }
-
-
-  .mat-toolbar.mat-primary {
-    background:rgb(189, 186, 186);
-    color: rgb(168, 166, 166);
-    
-  }
-
-  
-
-  .projectText{
-      font-size: 40px;
-  }
-
-  .png-icon{
-      justify-content: left;
-      left: -120px;
-      
-  } */
-
-  /* .companyName{
-    font-size: 150%;
-}
-
-.mat-toolbar{
-  height: 7vh;
-}
-
-div {
-    overflow: inherit;
-}
-
-.mat-sidenav-container{
-  background-color: lightskyblue;
-  min-height: 93vh !important;
-}
-
-a{
-    text-decoration: none;
-    font-size: 110%;
-    white-space: normal;
-}
-
-button{
-    font-size: 110%;
-    min-width: min-content;
-}
-
-.example-icon {
-    padding: 0 14px;
-  }
-  
-  .
-
-  .mat-sidenav-content{
-      font-size: 200%;
-      text-align: center;
-  } */
 .nav-toolbar{
-  background-color: blue;
+  background-color: white;
   transition: all 0.3s ease;
   color: #fff;
   margin-right: 0;
@@ -79,7 +16,6 @@ button{
   width: 100%;
   height: 10%;
 }
-
 
 .spacer{
   flex: 1 1 auto;
@@ -94,46 +30,21 @@ button{
 }
 
 .icon-menu{
-  font-size: 1.5em;
-  color: #000;
-  border: 1px solid white;
-  display: block;
-  padding: 5px 12px;
-  border-radius: 5px;
+  transform: scale(1.3);
+  color: #35435D;
+  display: inline-block;
+  padding: 5px 0;
+}
+
+.sidenav{
+  background: #fff;
+  width: 200px;
+  margin: 0;
+  padding: 10px;
 }
 
 
-/* .main-banner{
-  background: url(../../assets/images/barco3.jpg);
-  min-height: 400px;
-=======
-.main-banner{
-  background: url(../../assets/images/barco4.jpg);  
-  min-height: 600px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: -999;
+.sidenav-text{
+  color: #35435D;
+  text-decoration: none;
 }
-
-.main-banner:before{
-  content: "";
-  width: 100%;
-  min-height: 600px;
-  background: rgba(0,0,0,0.3);
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.main-banner-content{
-  width: 100%;
-  padding: 15px;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(5%) translate(-50%);
-  color: white;
-  font-size: 1.3em;
-} */
