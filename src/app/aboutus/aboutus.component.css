@@ -1,5 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Fraunces";
+}
+
 .aboutus-banner-img{
-  background: url(../../assets/images/barco7.jpg);
+  background: url(../../assets/images/ship1.jpg);
   min-height: 700px;
   position: absolute;
   top: 0;
@@ -29,30 +46,25 @@
     font-size: 1.3em;
 }
 
-/* .aboutus-banner-title, .aboutus-banner-text{
+.aboutus-banner-title, .aboutus-banner-text{
     font-size: 1.5em;
     padding: 10px;
-} */
-
-.main{
-    margin-top: 600px;
-    padding: 50px;
 }
 
-.spacer{
-    height: 300px;
-    width: 100%;
-    background: yellow;
-    display: block;
+.main{
+    margin-top: 650px;
+}
+
+.main-container{
+    overflow: hidden;
 }
 
 .matcard-container{
     font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
-    width: 450px;
-    height: auto;
-    margin: 100px 300px auto 20px;
+    padding: 25px;
+    max-width: 600px;
+    margin: auto;
     float: left;
-    border: red 5px solid;
 }
 
 .matcard-title{
@@ -61,22 +73,50 @@
     font-size: 2em;
     position: relative;
     color: #35435D;
+    margin-bottom: 30px;
 }
 
-.matcard-title::before{
-    content: "";
-    width: 70%;
-    position: absolute;
-    top: 40px;
-    left: 0%;
-    height: 3px;
-    background: #000;
-}
-
-.matcard-content{
-    font-size: 1.5em;
+.matcard-text{
+    font-size: 1.2em;
     text-align: justify;
-    color: #35435D;
-    margin-top: 20px;
-    padding: 5px;
+    color: #202124;
+}
+
+.matcard-title::after{
+    content: "";
+    width: 200px;
+    position: absolute;
+    bottom: -15px;
+    left: 1px;
+    height: 5px;
+    background: #01cab6;
+}
+
+.section-container{
+    overflow: hidden;
+    background: #033A6E;
+    
+}
+
+.section-title{
+    font-weight: bold;
+    font-size: 2em;
+    color: #fff;
+    text-align: left;
+    padding: 25px;
+}
+
+.section-content{
+    font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+    padding: 25px;
+    max-width: auto;
+    margin: auto;
+    float: left;
+    
+}
+
+.section-text{
+    font-size: 1.2em;
+    color: #fff;
+    text-align: justify;
 }
