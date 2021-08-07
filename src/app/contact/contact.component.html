@@ -1,51 +1,49 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <!-- <img src="https://img.freepik.com/foto-gratis/fondo-negro-moderno-futurista-abstracto-diseno-banner-grafico-tecnologia-dinamica-vector-fondo-corporativo_181182-738.jpg?size=626&ext=jpg" style="width: 100%; height: 20%;" > -->
 
 
+<section  >
   <div class="flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-front">
-        <img src="https://tampabaycateringco.com/wp-content/uploads/contact-banner.jpg" alt="Avatar" style="width:50%;height:100%; background-color: white;">
-      </div>
-      <div class="flip-card-back">
         <h1>Contact Us</h1> 
         <p>Phone: 82636-293872-020</p>
         <p>Email: emailTest@email.com</p>
         <agm-map
-        [latitude]="latitude" 
-        [longitude]="longitude" [zoom]="zoom">
-        <agm-marker [latitude]="20.703826" [longitude]="-103.331875" ></agm-marker>
+          [latitude]="latitude" 
+          [longitude]="longitude" 
+          [zoom]="zoom">
+        <agm-marker [latitude]="20.703826" [longitude]="-103.331875"  >
+          <agm-info-window >
+            <p style="color: black">{{txtInfoWindow}}</p>
+          </agm-info-window>
+        </agm-marker>
         </agm-map>
       </div>
+    
     </div>
   </div>
-  <br>
-  <body style="width: auto; height: 100%;">
-    <div class="container">
-      <form  >
-        <h3 style="font-family: Arial, Helvetica, sans-serif;"> <strong>Contact Information </strong></h3>
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Type Your name..">
+</section>
 
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-        <label for="lEmail">Email</label>
-        <input type="text" id="lemail" name="email" placeholder="Your email">
+<section >
+      <h3 style="font-family: Arial, Helvetica, sans-serif; padding-top: 3em;"> <strong>Contact Information </strong></h3>
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Type Your name..">
 
-        <label for="lPhone">Phone</label>
-        <input type="text" id="phone" name="phone" placeholder="Your phone">
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-        <button mat-raised-button color="primary">Send Message</button>
-      </form>
-    </div>
-  </body>
-  
-</html>
+      <label for="lEmail">Email</label>
+      <input type="text" id="lemail" name="email" placeholder="Your email">
+
+      <label for="lPhone">Phone</label>
+      <input type="text" id="phone" name="phone" placeholder="Your phone">
+
+      <button mat-raised-button color="primary">Send Message</button>
+</section>
+
+
+
+
 
 
 

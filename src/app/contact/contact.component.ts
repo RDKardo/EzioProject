@@ -9,8 +9,10 @@ export class ContactComponent implements OnInit {
   latitude:number = 20.703826;
   longitude:number = -103.331875;
   zoom: number = 15  ;
-
-  constructor() { }
+  txtInfoWindow: string;
+  constructor() { 
+    this.txtInfoWindow = "Calle Montes Celestes 1712,Col. Independencia, Guadalajara Jalisco MEX"
+  }
 
   ngOnInit(): void {
   }
