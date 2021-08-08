@@ -47,7 +47,12 @@ agm-map {
   padding-bottom: 3em;
   padding: 50px;
   margin:  auto;
-  
+  transition: transform 0.3s ease;
+}
+
+.flip-card:hover{
+  filter: saturate(0.9);
+  transform: scale(1.04);
 }
 
 img{
@@ -64,7 +69,6 @@ img{
   text-align: center;
   transition: transform 1.6s;
   transform-style: inherit; 
-
   box-shadow: 0 4px 8px 0 rgba(133, 180, 22, 0.2);
 }
 
@@ -102,5 +106,6 @@ p{
   font-size: 1em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 
 
