@@ -34,8 +34,8 @@
   transform: scale(1.3);
   color: #35435D;
   display: inline-block;
-  align-content: flex-start;
-  background-color: white;
+  *align-content: flex-start;
+  *background-color: white;
   padding: 5px 0;
 }
 
