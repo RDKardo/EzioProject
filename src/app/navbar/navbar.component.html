@@ -4,8 +4,8 @@
 </div>
 <!-- Menu lateral -->
 <mat-sidenav-container fxFlexFill>
-    <mat-sidenav class="sidenav" #sidenav fxLayout="column" mode="over" opened="false" fxHide.gt-sm="true"
-        position="end">
+    <mat-sidenav class="sidenav" #sidenav fxLayout="coulmn" mode="side" opened="false" fxHide.gt-sm="true"
+        position="start">
         <div fxLayout="column">
             <a mat-button routerLink="home" color="success">
                 <span class="sidenav-text">HOME</span>
@@ -23,6 +23,12 @@
     </mat-sidenav>
     <mat-sidenav-content>
         <!-- NAVIGATION MENU -->
+          <!-- Icono de menu -->
+          <div class="icon-menu" fxShow="true" fxHide.gt-sm="true" >
+            <button mat-icon-button (click)="sidenav.toggle()">
+                <mat-icon>menu</mat-icon>
+            </button>
+            </div>
         <mat-toolbar class="nav-toolbar">
             <!-- Logo -->
             <div class="site-logo">
@@ -30,11 +36,9 @@
                     <img src="/assets/barco-icon.png">
                 </a>
             </div>
-
             <span class="spacer"></span>
-
             <!-- Menu -->
-            <div fxShow="true" fxHide.lt-md="true">
+            <div fxShow="true" fxHide.lt-md="true" >
                 <a mat-button routerLink="home" color="success">
                     <span class="toolbarText">HOME</span>
                 </a>
@@ -50,12 +54,6 @@
                 <a mat-button routerLink="contact" color="success">
                     <span class="toolbarText">CONTACT</span>
                 </a>
-            </div>
-            <!-- Icono de menu -->
-            <div class="icon-menu" fxShow="true" fxHide.gt-sm="true">
-                <button mat-icon-button (click)="sidenav.toggle()">
-                    <mat-icon>menu</mat-icon>
-                </button>
             </div>
         </mat-toolbar>
 
