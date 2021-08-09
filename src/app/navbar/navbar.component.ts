@@ -5,11 +5,24 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent {
 
   constructor() { }
 
-  ngOnInit(): void {
+  toHome(){
+    document.getElementById("home").scrollIntoView({behavior:"smooth"});
+  }
+
+  toAboutus(){
+    document.getElementById("aboutus").scrollIntoView({behavior:"smooth"});
+  }
+
+  toProducts(){
+    document.getElementById("products").scrollIntoView({behavior:"smooth"});
+  }
+
+  toContact(){
+    document.getElementById("contact").scrollIntoView({behavior:"smooth"});
   }
 
 }

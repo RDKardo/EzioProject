@@ -1,62 +1,63 @@
-<div id="top-header">
-    <div class="clear-fix">
-    </div>
-</div>
-<!-- Menu lateral -->
-<mat-sidenav-container fxFlexFill>
-    <mat-sidenav class="sidenav" #sidenav fxLayout="coulmn" mode="over" opened="false" fxHide.gt-sm="true"
-        position="end">
-        <div fxLayout="column">
-            <a mat-button routerLink="home" color="success">
-                <span class="sidenav-text">HOME</span>
-            </a>
-            <a mat-button routerLink="aboutus" color="success">
-                <span class="sidenav-text">ABOUT</span>
-            </a>
-            <a mat-button routerLink="products" color="success">
-                <span class="sidenav-text">PRODUCTS</span>
-            </a>
-            <a mat-button routerLink="contact" color="success">
-                <span class="sidenav-text">CONTACT</span>
-            </a>
+<header>
+    <div id="top-header">
+        <div class="clear-fix">
         </div>
-    </mat-sidenav>
-    <mat-sidenav-content>
-        <!-- NAVIGATION MENU -->
-        <mat-toolbar class="nav-toolbar">
-            <!-- Logo -->
-            <div class="site-logo">
-                <a routerLink="home">
-                    <img src="/assets/barco-icon.png">
-                </a>
-            </div>
-            <span class="spacer"></span>
-            <!-- Menu -->
-            <div fxShow="true" fxHide.lt-md="true">
+    </div>
+    <!-- Menu lateral -->
+    <mat-sidenav-container fxFlexFill>
+        <mat-sidenav class="sidenav" #sidenav fxLayout="coulmn" mode="over" opened="false" fxHide.gt-sm="true"
+            position="end">
+            <div fxLayout="column">
                 <a mat-button routerLink="home" color="success">
-                    <span class="toolbarText">HOME</span>
+                    <span class="sidenav-text">HOME</span>
                 </a>
-
-                <button mat-button routerLink="aboutus" color="success">
-                    <span class="toolbarText">ABOUT</span>
-                </button>
-
-                <a mat-button routerLink="products" color="success">
-                    <span class="toolbarText">PRODUCTS</span>
+                <a mat-button (click)="toAboutus()" routerLinkActive="active" color="success">
+                    <span class="sidenav-text">ABOUT</span>
                 </a>
-
-                <a mat-button routerLink="contact" color="success">
-                    <span class="toolbarText">CONTACT</span>
+                <a mat-button (click)="toProducts()" routerLinkActive="active" color="success">
+                    <span class="sidenav-text">PRODUCTS</span>
+                </a>
+                <a mat-button (click)="toContact()" routerLinkActive="active" color="success">
+                    <span class="sidenav-text">CONTACT</span>
                 </a>
             </div>
-            <!-- Icono de menu -->
-            <div class="icon-menu" fxShow="true" fxHide.gt-sm="true">
-                <button mat-icon-button (click)="sidenav.toggle()">
-                    <mat-icon>menu</mat-icon>
-                </button>
-            </div>
-        </mat-toolbar>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <!-- NAVIGATION MENU -->
+            <mat-toolbar class="nav-toolbar">
+                <!-- Logo -->
+                <div class="site-logo">
+                    <a routerLink="home">
+                        <img src="/assets/barco-icon.png">
+                    </a>
+                </div>
+                <span class="spacer"></span>
+                <!-- Menu -->
+                <div fxShow="true" fxHide.lt-md="true">
+                    <a mat-button (click)="toHome()" routerLink="home" routerLinkActive="active" olor="success">
+                        <span class="toolbarText">HOME</span>
+                    </a>
 
-        <router-outlet></router-outlet>
-    </mat-sidenav-content>
-</mat-sidenav-container>
+                    <a mat-button (click)="toAboutus()" routerLinkActive="active" color="success">
+                        <span class="toolbarText">ABOUT</span>
+                    </a>
+
+                    <a mat-button (click)="toProducts()" routerLinkActive="active" color="success">
+                        <span class="toolbarText">PRODUCTS</span>
+                    </a>
+
+                    <a mat-button (click)="toContact()" routerLinkActive="active" color="success">
+                        <span class="toolbarText">CONTACT</span>
+                    </a>
+                </div>
+                <!-- Icono de menu -->
+                <div class="icon-menu" fxShow="true" fxHide.gt-sm="true">
+                    <button mat-icon-button (click)="sidenav.toggle()">
+                        <mat-icon>menu</mat-icon>
+                    </button>
+                </div>
+            </mat-toolbar>
+            <!-- <router-outlet></router-outlet> -->
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</header>
