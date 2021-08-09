@@ -62,6 +62,8 @@
     position: relative;
     color: #35435D;
     margin-bottom: 20px;
+    margin-bottom: 50px;
+    z-index: -1;
 }
 
 .about-title::after{
@@ -73,6 +75,7 @@
     *transform: translateX(-50%);
     height: 5px;
     background: #01cab6;
+    z-index: -1;
 }
 
 .about-text{
