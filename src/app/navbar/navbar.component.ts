@@ -14,11 +14,11 @@ export class NavbarComponent {
   }
 
   toAboutus(){
-    document.getElementById("aboutus").scrollIntoView({behavior:"smooth"});
+    document.getElementById("aboutus").scrollIntoView({behavior:"smooth",block:'start'});
   }
 
   toProducts(){
-    document.getElementById("products").scrollIntoView({behavior:"smooth"});
+    document.getElementById("products").scrollIntoView({behavior:"smooth",block:"end"});
   }
 
   toContact(){
