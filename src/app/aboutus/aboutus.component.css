@@ -12,15 +12,14 @@
     content: "";
     width: 100%;
     min-height: 800px;
-    background: rgb(8, 8, 8);
+    background: rgba(5,7,12,0.65);
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.7;
 }
 
 .aboutus-banner-content{
-    width: 100%;
+    width: 95%;
     padding: 15px;
     position: absolute;
     top: 60%;
@@ -31,7 +30,7 @@
 }
 
 .aboutus-banner-title, .aboutus-banner-text{
-    font-size: 1.5em;
+    font-size: 1.5rem;
     padding: 10px;
 }
 
@@ -91,7 +90,7 @@
     justify-content: space-between;
     padding: 30px;
     max-width: 1200px;
-    margin: 100px auto 10px auto;
+    margin: 100px auto 0 auto;
 }
 
 .goals-box-item{
@@ -105,7 +104,7 @@
     font-weight: bold;
     font-size: 1.2rem;
     color: #fff;
-    text-align: left;
+    text-align: center;
     margin-bottom: 30px;
 }
 
@@ -116,7 +115,14 @@
     max-width: 500px;
 }
 
-.goals-img img{
-    max-height: 100%;
-    max-width: 100%;
+.goals-list-img{
+    *list-style-image: url(../../assets/images/circle.png);
+    *list-style-position: inside;
+}
+
+.goals-section-video  iframe{
+    width: 600px;
+    height: 360px;
+    margin: 0;
+    padding: 0;
 }
