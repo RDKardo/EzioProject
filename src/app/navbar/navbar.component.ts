@@ -18,7 +18,7 @@ export class NavbarComponent {
   }
 
   toProducts(){
-    document.getElementById("products").scrollIntoView({behavior:"smooth",block:"end"});
+    document.getElementById("products").scrollIntoView({behavior:"smooth",block:"start"});
   }
 
   toContact(){
