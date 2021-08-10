@@ -25,20 +25,15 @@ header{
 #top-header{
   background-color: #35435D;
   width: 100%;
-  height: 3rem;
+  height: 3.5em;
 }
-
-
 
 .nav-toolbar{
   background-color: white;
   transition: all 0.3s ease;
   color: #35435D;
-  margin-right: 0;
-  margin-top: 0px;
-  margin-bottom: 1px;
-  padding: 4rem 0;
-  *position: relative;
+  margin: 0;
+  padding: 3em 0;
   width: 100%;
 }
 
@@ -49,7 +44,7 @@ header{
 .toolbarText{
   display: block;
   font-size: 1.5rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5em 1em;
 }
 
 .main-title{
@@ -69,7 +64,7 @@ header{
   background: #fff;
   width: 100px;
   margin: 0;
-  padding: 10px;
+  *padding: 10px;
   position: fixed;
 }
 
