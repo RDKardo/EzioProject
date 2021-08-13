@@ -1,22 +1,23 @@
 <header>
-    <div id="top-header">
+    <div id="header-top">
     </div>
+    
     <!-- Menu lateral -->
     <mat-sidenav-container fxFlexFill>
-        <mat-sidenav class="sidenav" #sidenav fxLayout="coulmn" mode="over" opened="false" fxHide.gt-sm="true"
+        <mat-sidenav class="sidenav" #sidenav fxLayout="column" mode="over" opened="false" fxHide.gt-sm="true"
             position="end">
             <div fxLayout="column">
-                <a mat-button routerLink="home" color="success">
-                    <span class="sidenav-text">HOME</span>
+                <a  style="text-align:left" (click)="sidenav.toggle()" mat-button routerLink="home" color="success">
+                    <span class="sidenav-text">home</span>
                 </a>
-                <a mat-button (click)="toAboutus()" routerLinkActive="active" color="success">
-                    <span class="sidenav-text">ABOUT</span>
+                <a style="text-align:left" (click)="sidenav.toggle()" mat-button (click)="toAboutus()" routerLinkActive="active" color="success">
+                    <span class="sidenav-text">about</span>
                 </a>
-                <a mat-button (click)="toProducts()" routerLinkActive="active" color="success">
-                    <span class="sidenav-text">PRODUCTS</span>
+                <a style="text-align:left" (click)="sidenav.toggle()" mat-button (click)="toProducts()" routerLinkActive="active" color="success">
+                    <span class="sidenav-text">products</span>
                 </a>
-                <a mat-button (click)="toContact()" routerLinkActive="active" color="success">
-                    <span class="sidenav-text">CONTACT</span>
+                <a style="text-align:left" (click)="sidenav.toggle()" mat-button (click)="toContact()" routerLinkActive="active" color="success">
+                    <span class="sidenav-text">contact</span>
                 </a>
             </div>
         </mat-sidenav>
@@ -33,29 +34,29 @@
                 <!-- Menu -->
                 <div fxShow="true" fxHide.lt-md="true">
                     <a mat-button (click)="toHome()" routerLink="home" routerLinkActive="active" olor="success">
-                        <span class="toolbarText">HOME</span>
+                        <span class="toolbarText">home</span>
                     </a>
 
                     <a mat-button (click)="toAboutus()" routerLinkActive="active" color="success">
-                        <span class="toolbarText">ABOUT</span>
+                        <span class="toolbarText">about</span>
                     </a>
 
                     <a mat-button (click)="toProducts()" routerLinkActive="active" color="success">
-                        <span class="toolbarText">PRODUCTS</span>
+                        <span class="toolbarText">products</span>
                     </a>
 
                     <a mat-button (click)="toContact()" routerLinkActive="active" color="success">
-                        <span class="toolbarText">CONTACT</span>
+                        <span class="toolbarText">contact</span>
                     </a>
                 </div>
                 <!-- Icono de menu -->
                 <div class="icon-menu" fxShow="true" fxHide.gt-sm="true">
-                    <button mat-icon-button (click)="sidenav.toggle()">
+                    <button mat-icon-button onclick="this.blur()" (click)="sidenav.toggle()">
                         <mat-icon>menu</mat-icon>
                     </button>
                 </div>
             </mat-toolbar>
-            <!-- <router-outlet></router-outlet> -->
-        </mat-sidenav-content>
+            
+        </mat-sidenav-content>     
     </mat-sidenav-container>
 </header>
