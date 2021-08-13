@@ -5,7 +5,8 @@ footer{
     *background-image: url(../../assets/images/background-footer.svg);
     *background-size: cover;
     position: static;
-    background-color: rgba(53, 67, 93, 0.2);
+    *background-color: rgba(53, 67, 93, 0.2);
+    background-color: #35435D;
     -webkit-mask-image: url("../../assets/images/background-footer.svg");
     mask-image: url("../../assets/images/background-footer.svg");
     -webkit-mask-size: cover;
@@ -16,7 +17,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 1200px;
+    width: 400px;
     margin: auto;
     margin-top: 100px;
 }
@@ -29,25 +30,34 @@ footer{
 
 .footer-logo img{
     display: block;
-    max-width: 100%;
+    *max-width: 100%;
+    width: 200px;
+    height: 100px;
+    *background-position: center;
+    *background-size: cover;
 }
 
 .box-footer a{
     margin-top: 10px;
-    color: #7a7a7a;
+    color: #908F8F;
     font-weight: 600;
     text-align: left;
+    text-decoration: none;
+}
+
+.box-footer a:hover{
+    opacity: 0.8;
 }
 
 .box-footer h3{
     margin-top: 15px;
     margin-bottom: 20px;
-    color: #343434;
+    color: #908F8F;
     font-weight: 700;
 }
 
 .footer-bottom{
-    max-width: 1200px;
+    max-width: 400px;
     margin: auto;
     text-align: center;
     padding: 0, 40px;
@@ -55,11 +65,22 @@ footer{
 
 .footer-bottom p{
     margin-top: 20px;
-    color: #7a7a7a;
+    color: #908F8F;
 }
 
 .footer-bottom hr{
     border: none;
     height: 1px;
-    background-color: #7a7a7a;
+    background-color: #908F8F;
+}
+
+/*Desktop design*/
+@media only screen and (min-width: 767px){
+    .footer-container{
+        min-width: 1200px; 
+    }
+
+    .footer-bottom{
+        max-width: 1200px;
+    }
 }

@@ -68,6 +68,7 @@ header{
   text-transform: uppercase;
 }
 
+/*Mobile design*/
 @media only screen and (max-width: 767px) {
   .nav-toolbar{
     padding: 2.4em 1em;
