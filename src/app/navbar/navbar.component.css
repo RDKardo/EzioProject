@@ -20,20 +20,20 @@ header{
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 999;
 }
 
-#top-header{
+#header-top{
   background-color: #35435D;
   width: 100%;
-  height: 3.5em;
+  height: 3.2em;
 }
 
 .nav-toolbar{
   background-color: white;
   transition: all 0.3s ease;
-  color: #35435D;
   margin: 0;
-  padding: 3em 0;
+  padding: 2.5em 0.7em;
   width: 100%;
 }
 
@@ -43,33 +43,42 @@ header{
 
 .toolbarText{
   display: block;
-  font-size: 1.5rem;
-  padding: 0.5em 1em;
-}
-
-.main-title{
+  font-size: 1.3rem;
   color: #35435D;
+  text-transform: uppercase;
 }
 
 .icon-menu{
   transform: scale(1.3);
   color: #35435D;
-  display: inline-block;
-  *align-content: flex-start;
-  *background-color: white;
-  padding: 5px 0;
+  *display: inline-block;
 }
 
 .sidenav{
   background: #fff;
-  width: 100px;
+  width: 250px;
   margin: 0;
-  *padding: 10px;
+  padding: 5em 2em;
   position: fixed;
 }
-
 
 .sidenav-text{
   color: #35435D;
   text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 767px) {
+  .nav-toolbar{
+    padding: 2.4em 1em;
+  }
+  
+  .site-logo{
+    width: 160px;
+    height: 75px;
+  }
+  
+  .icon-menu{
+    transform: scale(1.2);
+  }
 }

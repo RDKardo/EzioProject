@@ -48,7 +48,7 @@ import {MatTreeModule} from '@angular/material/tree';
 import {OverlayModule} from '@angular/cdk/overlay';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AgmCoreModule } from '@agm/core';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 // Components
 import { HomeComponent } from './home/home.component';
@@ -121,6 +121,7 @@ import { FooterComponent } from './footer/footer.component';
     PortalModule,
     ScrollingModule,
     FlexLayoutModule,
+    FontAwesomeModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDYhSyBDAzRL3MAu2FGLuwol62AIfEYq9I'
     })

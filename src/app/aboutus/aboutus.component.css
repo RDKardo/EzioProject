@@ -19,19 +19,21 @@
 }
 
 .aboutus-banner-content{
-    width: 95%;
-    padding: 15px;
+    width: 100%;
+    *padding: 15px;
     position: absolute;
     top: 60%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-align: justify;
 }
 
-.aboutus-banner-title, .aboutus-banner-text{
-    font-size: 1.5rem;
-    padding: 10px;
+.aboutus-banner-text{
+    padding: 2em;
 }
 
 .about-container{
@@ -39,25 +41,37 @@
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1200px;
-    margin: 750px auto 10px auto;
+    margin: 700px auto 0 auto;
     padding-top: 14em;
+}
+
+.about-img {
+    background: url('../../assets/images/shipment1.jpg');
+    min-height: 400px;
+    min-width: 400px;
+    margin: 0 auto 30px auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .about-box-item{
     font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
     display: flex;
     flex-direction: column;
-    max-width: 800px;
+    width: 400px;
+    padding: 2em;
+    margin: 0 auto 0 auto;
+    line-height: 1.3;
 }
 
 .about-title{
     font-weight: bold;
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     position: relative;
     color: #35435D;
     margin-bottom: 20px;
-    z-index: -1;
 }
 
 .about-title::after{
@@ -66,10 +80,8 @@
     position: absolute;
     bottom: -10px;
     left: 0;
-    *transform: translateX(-50%);
-    height: 5px;
+    height: 3px;
     background: #01cab6;
-    z-index: -1;
 }
 
 .about-text{
@@ -88,21 +100,24 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 30px;
     max-width: 1200px;
-    margin: 100px auto 0 auto;
+    padding: 2em;
+    margin: 0 auto 0 auto;
 }
 
 .goals-box-item{
     display: flex;
     flex-wrap: wrap;
-    max-width: 600px;
+    width: 400px;
     flex-direction: column;
+    margin: auto;
+    padding: 2em;
+    line-height: 1.3;
 }
 
 .goals-title{
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #fff;
     text-align: center;
     margin-bottom: 30px;
@@ -112,7 +127,13 @@
     font-size: 1.1rem;
     color: #fff;
     text-align: justify;
-    max-width: 500px;
+}
+
+.goals-text ul{
+    padding: 0;
+}
+.goals-text li{
+    *list-style: none;
 }
 
 .goals-list-img{
@@ -121,8 +142,12 @@
 }
 
 .goals-section-video  iframe{
-    width: 600px;
-    height: 360px;
+    min-width: 400px;
+    min-height: 400px;
     margin: 0;
     padding: 0;
+}
+
+.goals-section-video{  
+    margin: auto;
 }
